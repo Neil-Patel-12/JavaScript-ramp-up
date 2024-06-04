@@ -1,8 +1,8 @@
-// console.log("Hello from our first JS file");
-// let value = 1 + 3;
-// if (value > 1) {
-//     console.log("You are super smart");
-// }
+console.log("Hello from our first JS file");
+let value1 = 4;
+if (value1 > 1) {
+    console.log("You are super smart");
+}
 
 const password = prompt("Enter a password...");
 if (password.length >= 6) {
@@ -16,39 +16,39 @@ if (password.length >= 6) {
     console.log("Pasword must be 6 charactors or greater!");
 }
 
-// let runner = 66;
-// let number = 55;
+let runner = 66;
+let number = 55;
 
-// if (runner === 66 && number == 55) {
-//     console.log("Lets goo its too easy!!!");
-// }
-// if (number == 55 || runner === 100) {
-//     console.log("we made it!!!!!!!!!!!!!!!!!!!!");
-// }
+if (runner === 66 && number == 55) {
+    console.log("Lets goo its too easy!!!");
+}
+if (number == 55 || runner === 100) {
+    console.log("we made it!!!!!!!!!!!!!!!!!!!!");
+}
 
 // JavaScript Arrays
 
-// let arr = ["Monday", "tuesday", "wednesday"];
-// let var99 = arr.length;
-// console.log(arr[0][3]);
+let arr = ["Monday", "tuesday", "wednesday"];
+let var99 = arr.length;
+console.log(arr[0][3]); // d
 
-// let answer = arr.push("pink");
+let answer = arr.push("pink");
 
-// console.log(answer);
+console.log(answer);
 
-// // JavaScript Objects
+// JavaScript Objects
 
-// const hhh = { neil: 89, krupa: 56 };
-// hhh.suresh = 99;
-// hhh.mom = 100;
-// hhh.neil = 888;
-// console.log(hhh);
-// let sum = 0;
-// for (let i = 1; i <= 10; i++) {
+const hhh = { neil: 89, krupa: 56 };
+hhh.suresh = 99;
+hhh.mom = 100;
+hhh.neil = 888;
+console.log(hhh);
+let sum = 0;
+for (let i = 1; i <= 10; i++) {
 
-//     sum += i;
-// }
-// console.log(sum);
+    sum += i;
+}
+console.log(sum); // formula -> n(n+2)/2 -> 55
 
 // for (let i = 0; i <= 50; i++) {
 //     if (i % 2 === 0) {
@@ -60,82 +60,82 @@ if (password.length >= 6) {
 //     console.log(i);
 // }
 
-// const animals = ['lion', 'tiger', 'bear'];
-// for (let i = 0; i < animals.length; i++) {
-//     console.log(`the value at ${i} is ${animals[i]}`);
-// }
+const animals = ['lion', 'tiger', 'bear'];
+for (let i = 0; i < animals.length; i++) {
+    console.log(`the value at ${i} is ${animals[i]}`);
+}
 
 // <------------------------------------------->
 // <---------- Guess the number game ---------->
 // <------------------------------------------->
 
-// let maximum = parseInt(prompt("Enter the maximum number!"));
-// while (!maximum) {
-//     maximum = prompt("Enter a valid number!");
-// }
+let maximum = parseInt(prompt("Enter the maximum number!"));
+while (!maximum) {
+    maximum = prompt("Enter a valid number!");
+}
 
-// const targetNum = Math.floor(Math.random() * maximum) + 1;
+const targetNum = Math.floor(Math.random() * maximum) + 1;
 
-// let guess = prompt("Enter your first guess! (Type 'q' to quit)");
-// let attempts = 1;
+let guess = prompt("Enter your first guess! (Type 'q' to quit)");
+let attempts = 1;
 
-// while (parseInt(guess) !== targetNum) {
-//     if (guess === 'q') {
-//         break;
-//     }
-//     guess = parseInt(guess);
-//     if (guess > targetNum) {
-//         guess = prompt("Enter a lower number!");
-//         attempts += 1;
-//     }
-//     else if (guess < targetNum) {
-//         guess = prompt("Enter a higher number!");
-//         attempts += 1;
-//     }
-//     else {
-//         guess = prompt("Invalid guess. Please enter a number or 'q' to quit.");
-//     }
-// }
+while (parseInt(guess) !== targetNum) {
+    if (guess === 'q') {
+        break;
+    }
+    guess = parseInt(guess);
+    if (guess > targetNum) {
+        guess = prompt("Enter a lower number!");
+        attempts += 1;
+    }
+    else if (guess < targetNum) {
+        guess = prompt("Enter a higher number!");
+        attempts += 1;
+    }
+    else {
+        guess = prompt("Invalid guess. Please enter a number or 'q' to quit.");
+    }
+}
 
-// if (guess === 'q') {
-//     console.log("you quiter");
-// } else {
-//     console.log("WOW you are AMAZING!!!");
-//     console.log(`You got the correct answer: ${targetNum} in ${attempts} guesses!!!`);
-// }
+if (guess === 'q') {
+    console.log("you quit the game.");
+} else {
+    console.log("WOW you are AMAZING!!!");
+    console.log(`You got the correct answer: ${targetNum} in ${attempts} guesses!!!`);
+}
 
 
 // <------------------------------------------->
 // <---------- Todo List Application ---------->
 // <------------------------------------------->
 
-// let user_input = prompt("What would you like to do?");
-// const todo = [];
+let user_input = prompt("What would you like to do?");
+const todo = [];
 
-// while (user_input !== "quit") {
-//     if (user_input === "new") {
-//         let enter = prompt("Enter new todo");
-//         todo.push(enter);
-//         console.log(`${enter} added to list`);
-//     }
-//     else if (user_input === "list") {
-//         console.log("**********");
-//         for (let i = 0; i < todo.length; i++) {
-//             console.log(`${i}: ${todo[i]}`);
-//         }
-//         console.log("**********");
-//     }
-//     else if (user_input === "delete") {
-//         let remove = parseInt(prompt("Enter index of todo to delete"));
-//         todo.splice(remove, 1);
-//         console.log("Todo Removed");
-//     }
+while (user_input !== "quit") {
+    if (user_input === "new") {
+        let enter = prompt("Enter new todo");
+        todo.push(enter);
+        console.log(`${enter} added to list`);
+    }
+    else if (user_input === "list") {
+        console.log("**********");
+        for (let i = 0; i < todo.length; i++) {
+            console.log(`${i}: ${todo[i]}`);
+        }
+        console.log("**********");
+    }
+    else if (user_input === "delete") {
+        let remove = parseInt(prompt("Enter index of todo to delete"));
+        todo.splice(remove, 1);
+        console.log("Todo Removed");
+    }
 
-//     user_input = prompt("What would you like to do?");
-// }
-// if (user_input === "quit") {
-//     console.log("OKAY, YOU QUIT THE APP");
-// }
+    user_input = prompt("What would you like to do?");
+}
+if (user_input === "quit") {
+    console.log("OKAY, YOU QUIT THE APP");
+}
 
 // <------------------------------------------------------------------->
 // <----------------- FUNCTIONS ------------------>
@@ -213,7 +213,7 @@ function bankRobbery() {
 let square = function (num) {
     return num * num;
 }
-square(9);
+square(9); // 81
 
 // Higher Order Functions (functions as arguments && return function)
 function callTwice(func) {
@@ -337,12 +337,12 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
 // }
 // numbers.forEach(print);
 
-// // or do this
-// numbers.forEach(function (el) {
-//     if (el % 2 === 0) {
-//         console.log(el);
-//     }
-// });
+// or do this
+numbers.forEach(function (el) {
+    if (el % 2 === 0) {
+        console.log(el);
+    }
+});
 
 // for (let el of numbers){
 //     console.log(el);
@@ -567,7 +567,7 @@ function sumAll() {
 sumAll(1, 8, 6, 5, 3, 2, 4, 5);
 sumAll(9, 5);
 
-function sumAll2(...nums) {
+function sumAll2(...nums) {   // pass in as sumAll2(1, 2, 3, 4)
     console.log(nums); // this is now an array.
     let total = 0;
     for (let i = 0; i < arguments.length; i++) {
