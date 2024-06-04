@@ -75,3 +75,23 @@ const obj2 = { b: 3, c: 4 };
 const merged = { ...obj1, ...obj2 };
 
 console.log(merged); // { a: 1, b: 3, c: 4 }
+
+
+const comment = {
+    username: "neilpatel",
+    downVote: 19,
+    upVote: 214,
+    commentText: "drive fast car",
+    tags: ["#funny", "#fast"],
+    fun: true
+};
+console.log(comment);
+
+console.log(comment["username"]);
+console.log(comment.username);
+
+comment.location = "Florida";
+comment["tags"].push("#R8");
+comment.fun = false;
+
+console.log(comment);
