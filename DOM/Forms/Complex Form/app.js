@@ -23,3 +23,8 @@ const addTweet = (username, tweet) => {
     newTweet.append(`- ${tweet}`);
     tweetContainer.append(newTweet);
 }
+
+tweetContainer.addEventListener("click", function (e) { // event object
+    // e.target.remove(); 
+    e.target.ndeName === "LI" && e.target.remove();
+});
